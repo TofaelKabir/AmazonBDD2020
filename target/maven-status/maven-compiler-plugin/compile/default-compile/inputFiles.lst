@@ -1,6 +1,7 @@
 /Users/mohammadsharkar/eclipse-workspace/AmazonBDDTestAutomation/src/main/java/com/amazonbdd/test/qa/enums/OS.java
 /Users/mohammadsharkar/eclipse-workspace/AmazonBDDTestAutomation/src/main/java/com/amazonbdd/test/qa/pageObjects/RegistryPage.java
 /Users/mohammadsharkar/eclipse-workspace/AmazonBDDTestAutomation/src/main/java/com/amazonbdd/test/qa/pageObjects/SellPage.java
+/Users/mohammadsharkar/eclipse-workspace/AmazonBDDTestAutomation/src/main/java/com/amazonbdd/test/qa/pageObjects/Finding.java
 /Users/mohammadsharkar/eclipse-workspace/AmazonBDDTestAutomation/src/main/java/com/amazonbdd/test/qa/pageObjects/SignInPage.java
 /Users/mohammadsharkar/eclipse-workspace/AmazonBDDTestAutomation/src/main/java/com/amazonbdd/test/qa/verification/beans/LeadsData.java
 /Users/mohammadsharkar/eclipse-workspace/AmazonBDDTestAutomation/src/main/java/com/amazonbdd/test/qa/helper/Constants.java
@@ -15,6 +16,7 @@
 /Users/mohammadsharkar/eclipse-workspace/AmazonBDDTestAutomation/src/main/java/com/amazonbdd/test/qa/testRunner/TestRunner.java
 /Users/mohammadsharkar/eclipse-workspace/AmazonBDDTestAutomation/src/main/java/com/amazonbdd/test/qa/helper/WaitHelper.java
 /Users/mohammadsharkar/eclipse-workspace/AmazonBDDTestAutomation/src/main/java/com/amazonbdd/test/qa/helper/LoggerHelper.java
+/Users/mohammadsharkar/eclipse-workspace/AmazonBDDTestAutomation/src/main/java/com/amazonbdd/test/qa/helper/TestA.java
 /Users/mohammadsharkar/eclipse-workspace/AmazonBDDTestAutomation/src/main/java/com/amazonbdd/test/qa/pageObjects/LeadsVerificationPage.java
 /Users/mohammadsharkar/eclipse-workspace/AmazonBDDTestAutomation/src/main/java/com/amazonbdd/test/qa/pageObjects/YourAmazonDotComPage.java
 /Users/mohammadsharkar/eclipse-workspace/AmazonBDDTestAutomation/src/main/java/com/amazonbdd/test/qa/stepdefinitions/RegistryPageStepDefinitions.java

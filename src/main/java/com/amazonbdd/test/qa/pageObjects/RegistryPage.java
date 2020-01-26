@@ -17,7 +17,8 @@ public class RegistryPage {
 	@FindBy(xpath="//img[@alt='Wedding Registry']")
 	public WebElement weddingRegistry;
 	
-	@FindBy(xpath="//a[normalize-space(text())='Create your registry']")
+	//@FindBy(xpath="//a[normalize-space(text())='Create your registry']")
+	@FindBy(xpath="//a[contains(text(),'Create your registry')] ")
 	public WebElement createYourRegistry;
 	
 	@FindBy(xpath="//input[@name='email']")
@@ -29,7 +30,7 @@ public class RegistryPage {
 	@FindBy(id="signInSubmit")
 	public WebElement signIn;
 	
-	@FindBy(partialLinkText="awr-logo")
+	@FindBy(xpath="//img//parent::a[@class='wedding-subnav__logo']")
 	public WebElement weddingRegistryLogo;
 	
 	@FindBy(name="firstNamePartner1")
@@ -134,7 +135,7 @@ public class RegistryPage {
 	@FindBy(linkText="No thanks, I don't want to sign up for Prime at this time")
 	public WebElement noThanks;
 	
-	@FindBy(partialLinkText="wedding-logo-en_US")
+	@FindBy(xpath="//img//parent::a[@class='wedding-subnav__logo']")
 	public WebElement weddingLogo;
 	
 	@FindBy(css=".wedding-details-stripe__greeting-header")
@@ -148,7 +149,13 @@ public class RegistryPage {
 		this.driver = driver;
 		PageFactory.initElements(driver, this);
 	}
+	public void enterEmail(String email){
+		this.email.sendKeys(email);
+	}
 	
+	public void enterPassword(String password){
+		this.password.sendKeys(password);
+	}
 	public String validateWeddingRegistryTitle() {
 		return driver.getTitle();
 	}
@@ -158,12 +165,12 @@ public class RegistryPage {
 	}
 	
 	public boolean validateWeddingRegistryLogo() {
-		return weddingRegistryLogo.isDisplayed();
+		return weddingLogo.isDisplayed();
 	}
 	
-	public boolean validateWeddingLogo() {
-		return weddingRegistryLogo.isDisplayed();
-	}
+//	public boolean validateWeddingLogo() {
+//		return weddingLogo.isDisplayed();
+//	}
 	
 	public boolean verifyHomePageHeader(){ //how can we make this 2 method together
 		waitHelper.WaitForElement(greetingHeader, 60);

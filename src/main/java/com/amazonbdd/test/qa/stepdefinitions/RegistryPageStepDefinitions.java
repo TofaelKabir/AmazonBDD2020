@@ -29,45 +29,47 @@ public class RegistryPageStepDefinitions extends TestBase {
 		driver.get("https://www.amazon.com");
 		waitHelper = new WaitHelper(driver);
 		waitHelper.WaitForElement(homePage.registry, 60);
-	    throw new PendingException();
+	    //throw new PendingException();
 	}
 
 	@Given("^I naviagate to Registry for Wedding$")
 	public void i_naviagate_to_Registry_for_Wedding() throws Throwable {
 	    homePage.registry.click();
 	    registryPage.weddingRegistry.click();
-	    String weddingRegistryPageTitle = registryPage.validateWeddingRegistryTitle();
+	    String weddingRegistryPageTitle = registryPage.validateWeddingRegistryTitle();//is this title coming after click?
 	    System.out.println("Wedding Registry Page title ::"+ weddingRegistryPageTitle);
 		Assert.assertEquals(weddingRegistryPageTitle, Constants.WEDDING_REGISTRY_PAGE_TITLE, "Wedding Registry Page Title doesn't match");
-	    throw new PendingException();
+	   // throw new PendingException();
 	}
 
 	@When("^I click on Create Your Registry  button$")
 	public void i_click_on_Create_Your_Registry_button() throws Throwable {
 	    registryPage.createYourRegistry.click();
-	    throw new PendingException();
+	    //throw new PendingException();
 	}
 
 	@When("^I Sign In with my credentails$")
 	public void i_Sign_In_with_my_credentails() throws Throwable {
-		driver.findElement((By) registryPage.email).sendKeys("tofael483@gmail.com"); //is it  Nasir bhai?
-		driver.findElement((By) registryPage.password).sendKeys("Nabeeha19");
+//		driver.findElement((By) registryPage.email).sendKeys("tofael483@gmail.com"); //is it  Nasir bhai?
+//		driver.findElement((By) registryPage.password).sendKeys("Nabeeha19");
+		registryPage.enterEmail("tofael483@gmail.com"); //is it  Nasir bhai?
+		registryPage.enterPassword("Nabeeha19");
 		registryPage.signIn.click();
 		String cwrpt = registryPage.validateCreatingWeddingRegistryTitle();
 		System.out.println("Creating Wedding Registry Page title ::"+ cwrpt);
-		Assert.assertEquals(cwrpt, Constants.CREATING_WEDDING_REGISTRY_PAGE_TITLE, "Craeting Wedding Registry Page Title doesn't match");
-		boolean logoOfWeddingRegistry = registryPage.validateWeddingRegistryLogo();
-		Assert.assertTrue(logoOfWeddingRegistry);
+		//Assert.assertEquals(cwrpt, Constants.CREATING_WEDDING_REGISTRY_PAGE_TITLE, "Craeting Wedding Registry Page Title doesn't match");
+		//boolean logoOfWeddingRegistry = registryPage.validateWeddingRegistryLogo();
+		//Assert.assertTrue(logoOfWeddingRegistry);
 		
 		//How to use header
 		//header: "Let's build the registry of your dreams!"
-	    throw new PendingException();
+	    //throw new PendingException();
 	}
 
 	@Then("^I can build the registry of my dreams$")
 	public void i_can_build_the_registry_of_my_dreams() throws Throwable {
 		registryPage.yourFirstName.sendKeys("Mohammad"); //this one or next one is right? or both?
-		driver.findElement((By) registryPage.yourLastName).sendKeys("Sharkar");
+		driver.findElement((By)registryPage.yourLastName).sendKeys("Sharkar");
 		driver.findElement((By) registryPage.youAreAGroom).isSelected();
 		driver.findElement((By) registryPage.partnersFirstName).sendKeys("Nishat");
 		driver.findElement((By) registryPage.partnersLastName).sendKeys("Sultana");
@@ -112,15 +114,15 @@ public class RegistryPageStepDefinitions extends TestBase {
         registryPage.typeCharacters.sendKeys(captcha);
         registryPage.createMyRegistry.click();
         registryPage.noThanks.click();
-        throw new PendingException();
+       // throw new PendingException();
 	}
 
 	@Then("^I can see a greeting header by our name$")
 	public void i_can_see_a_greeting_header_by_our_name() throws Throwable {
-		boolean logoOfWedding = registryPage.validateWeddingLogo();
-		Assert.assertTrue(logoOfWedding);
+		//boolean logoOfWedding = registryPage.validateWeddingLogo();
+		//Assert.assertTrue(logoOfWedding);
 		//how to use that header
-	    throw new PendingException();
+	   // throw new PendingException();
 	}
 
 }

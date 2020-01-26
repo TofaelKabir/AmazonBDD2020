@@ -1,16 +1,28 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 2, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 1.366 s <<< FAILURE! - in TestSuite
-feature(com.amazonbdd.test.qa.testRunner.TestRunner)  Time elapsed: 0.232 s  <<< FAILURE!
-cucumber.runtime.CucumberException: java.lang.NullPointerException
+Tests run: 2, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 29.684 s <<< FAILURE! - in TestSuite
+feature(com.amazonbdd.test.qa.testRunner.TestRunner)  Time elapsed: 14.727 s  <<< FAILURE!
+cucumber.runtime.CucumberException: java.lang.AssertionError: Wedding Registry Page Title doesn't match expected [Amazon Wedding] but found []
 	at com.amazonbdd.test.qa.testRunner.TestRunner.feature(TestRunner.java:28)
-Caused by: java.lang.NullPointerException
-	at com.amazonbdd.test.qa.testRunner.TestRunner.feature(TestRunner.java:28)
+Caused by: java.lang.AssertionError: Wedding Registry Page Title doesn't match expected [Amazon Wedding] but found []
 
-feature(com.amazonbdd.test.qa.testRunner.TestRunner)  Time elapsed: 0.091 s  <<< FAILURE!
-cucumber.runtime.CucumberException: java.lang.NullPointerException
+feature(com.amazonbdd.test.qa.testRunner.TestRunner)  Time elapsed: 13.783 s  <<< FAILURE!
+cucumber.runtime.CucumberException: 
+org.openqa.selenium.JavascriptException: javascript error: document.getElementByClass is not a function
+  (Session info: chrome=79.0.3945.88)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'Mohammads-MacBook-Air.local', ip: 'fe80:0:0:0:896:29e6:d18c:3e44%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.14.6', java.version: '1.8.0_221'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 79.0.3945.88, chrome: {chromedriverVersion: 79.0.3945.36 (3582db32b3389..., userDataDir: /var/folders/cf/591wgxqs2w9...}, goog:chromeOptions: {debuggerAddress: localhost:52493}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 1bfebc61839ab82bf61aae4abc8bcd3c
 	at com.amazonbdd.test.qa.testRunner.TestRunner.feature(TestRunner.java:28)
-Caused by: java.lang.NullPointerException
-	at com.amazonbdd.test.qa.testRunner.TestRunner.feature(TestRunner.java:28)
+Caused by: org.openqa.selenium.JavascriptException: 
+javascript error: document.getElementByClass is not a function
+  (Session info: chrome=79.0.3945.88)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'Mohammads-MacBook-Air.local', ip: 'fe80:0:0:0:896:29e6:d18c:3e44%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.14.6', java.version: '1.8.0_221'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 79.0.3945.88, chrome: {chromedriverVersion: 79.0.3945.36 (3582db32b3389..., userDataDir: /var/folders/cf/591wgxqs2w9...}, goog:chromeOptions: {debuggerAddress: localhost:52493}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 1bfebc61839ab82bf61aae4abc8bcd3c
 

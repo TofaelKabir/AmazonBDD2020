@@ -1,2 +1,8 @@
-2019-09-23 22:09:646 INFO  ServiceHooks:33 -  is Failed
-2019-09-23 22:09:738 INFO  ServiceHooks:33 - Sign in with valid credential is Failed
+2020-01-02 21:01:120 INFO  WaitHelper:20 - waiting for element visibilityOf..
+2020-01-02 21:01:448 INFO  WaitHelper:23 - element is visible..
+2020-01-02 21:01:84 INFO  ServiceHooks:33 -  is Failed
+2020-01-02 21:01:903 INFO  WaitHelper:20 - waiting for element visibilityOf..
+2020-01-02 21:01:130 INFO  WaitHelper:23 - element is visible..
+2020-01-02 21:01:368 INFO  WaitHelper:20 - waiting for element visibilityOf..
+2020-01-02 21:01:438 INFO  WaitHelper:23 - element is visible..
+2020-01-02 21:01:732 INFO  ServiceHooks:33 - Sign in with valid credential is Failed

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [BDD Test Suite]">
+  <test name="Login Test">
+    <classes>
+      <class name="com.amazonbdd.test.qa.testRunner.TestRunner"/>
+    </classes>
+  </test> <!-- Login Test -->
+  <test name="Login Test(failed)">
+    <classes>
+      <class name="com.amazonbdd.test.qa.testRunner.TestRunner">
+        <methods>
+          <include name="testDownClass"/>
+          <include name="feature" invocation-numbers="0 1"/>
+          <include name="setUpClass"/>
+        </methods>
+      </class> <!-- com.amazonbdd.test.qa.testRunner.TestRunner -->
+    </classes>
+  </test> <!-- Login Test(failed) -->
+</suite> <!-- Failed suite [BDD Test Suite] -->

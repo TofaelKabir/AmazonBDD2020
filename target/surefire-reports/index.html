@@ -134,26 +134,13 @@
                   </a> <!-- feature(As an User) -->
                   <span class="method-name">feature</span>
                   <span class="parameters">(As an User)</span>
-                  <div class="stack-trace">cucumber.runtime.CucumberException: java.lang.NullPointerException
+                  <div class="stack-trace">cucumber.runtime.CucumberException: java.lang.AssertionError: Wedding Registry Page Title doesn&apos;t match expected [Amazon Wedding] but found []
 	at cucumber.api.testng.TestNGCucumberRunner.runCucumber(TestNGCucumberRunner.java:69)
 	at com.amazonbdd.test.qa.testRunner.TestRunner.feature(TestRunner.java:28)
-Caused by: java.lang.NullPointerException
-	at java.util.Objects.requireNonNull(Objects.java:203)
-	at org.openqa.selenium.interactions.Actions.&lt;init&gt;(Actions.java:65)
-	at com.amazonbdd.test.qa.testBase.TestBase.&lt;init&gt;(TestBase.java:14)
-	at com.amazonbdd.test.qa.stepdefinitions.ServiceHooks.initializeTest(ServiceHooks.java:24)
-	at cucumber.runtime.Utils$1.call(Utils.java:40)
-	at cucumber.runtime.Timeout.timeout(Timeout.java:16)
-	at cucumber.runtime.Utils.invoke(Utils.java:34)
-	at cucumber.runtime.java.JavaHookDefinition.execute(JavaHookDefinition.java:60)
-	at cucumber.runtime.Runtime.runHookIfTagsMatch(Runtime.java:224)
-	at cucumber.runtime.Runtime.runHooks(Runtime.java:212)
-	at cucumber.runtime.Runtime.runBeforeHooks(Runtime.java:202)
-	at cucumber.runtime.model.CucumberScenario.run(CucumberScenario.java:40)
-	at cucumber.runtime.model.CucumberFeature.run(CucumberFeature.java:165)
-	at cucumber.api.testng.TestNGCucumberRunner.runCucumber(TestNGCucumberRunner.java:63)
-	... 29 more
-... Removed 32 stack frames
+Caused by: java.lang.AssertionError: Wedding Registry Page Title doesn&apos;t match expected [Amazon Wedding] but found []
+	at com.amazonbdd.test.qa.stepdefinitions.RegistryPageStepDefinitions.i_naviagate_to_Registry_for_Wedding(RegistryPageStepDefinitions.java:41)
+	at ✽.And I naviagate to Registry for Wedding(registryPage.feature:10)
+... Removed 33 stack frames
 </div> <!-- stack-trace -->
                   <em>
 (Runs cucmber Features)                  </em>
@@ -165,25 +152,31 @@ Caused by: java.lang.NullPointerException
                   </a> <!-- feature(Sign In) -->
                   <span class="method-name">feature</span>
                   <span class="parameters">(Sign In)</span>
-                  <div class="stack-trace">cucumber.runtime.CucumberException: java.lang.NullPointerException
+                  <div class="stack-trace">cucumber.runtime.CucumberException: org.openqa.selenium.JavascriptException: javascript error: document.getElementByClass is not a function
+  (Session info: chrome=79.0.3945.88)
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;Mohammads-MacBook-Air.local&apos;, ip: &apos;fe80:0:0:0:896:29e6:d18c:3e44%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.14.6&apos;, java.version: &apos;1.8.0_221&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 79.0.3945.88, chrome: {chromedriverVersion: 79.0.3945.36 (3582db32b3389..., userDataDir: /var/folders/cf/591wgxqs2w9...}, goog:chromeOptions: {debuggerAddress: localhost:52493}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 1bfebc61839ab82bf61aae4abc8bcd3c
 	at cucumber.api.testng.TestNGCucumberRunner.runCucumber(TestNGCucumberRunner.java:69)
 	at com.amazonbdd.test.qa.testRunner.TestRunner.feature(TestRunner.java:28)
-Caused by: java.lang.NullPointerException
-	at java.util.Objects.requireNonNull(Objects.java:203)
-	at org.openqa.selenium.interactions.Actions.&lt;init&gt;(Actions.java:65)
-	at com.amazonbdd.test.qa.testBase.TestBase.&lt;init&gt;(TestBase.java:14)
-	at com.amazonbdd.test.qa.stepdefinitions.ServiceHooks.initializeTest(ServiceHooks.java:24)
-	at cucumber.runtime.Utils$1.call(Utils.java:40)
-	at cucumber.runtime.Timeout.timeout(Timeout.java:16)
-	at cucumber.runtime.Utils.invoke(Utils.java:34)
-	at cucumber.runtime.java.JavaHookDefinition.execute(JavaHookDefinition.java:60)
-	at cucumber.runtime.Runtime.runHookIfTagsMatch(Runtime.java:224)
-	at cucumber.runtime.Runtime.runHooks(Runtime.java:212)
-	at cucumber.runtime.Runtime.runBeforeHooks(Runtime.java:202)
-	at cucumber.runtime.model.CucumberScenario.run(CucumberScenario.java:40)
-	at cucumber.runtime.model.CucumberFeature.run(CucumberFeature.java:165)
-	at cucumber.api.testng.TestNGCucumberRunner.runCucumber(TestNGCucumberRunner.java:63)
-	... 29 more
+Caused by: org.openqa.selenium.JavascriptException: javascript error: document.getElementByClass is not a function
+  (Session info: chrome=79.0.3945.88)
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;Mohammads-MacBook-Air.local&apos;, ip: &apos;fe80:0:0:0:896:29e6:d18c:3e44%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.14.6&apos;, java.version: &apos;1.8.0_221&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 79.0.3945.88, chrome: {chromedriverVersion: 79.0.3945.36 (3582db32b3389..., userDataDir: /var/folders/cf/591wgxqs2w9...}, goog:chromeOptions: {debuggerAddress: localhost:52493}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 1bfebc61839ab82bf61aae4abc8bcd3c
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.executeScript(RemoteWebDriver.java:489)
+	at com.amazonbdd.test.qa.stepdefinitions.SigninPageStepDefinitions.i_enter_email_in_input_field_as(SigninPageStepDefinitions.java:79)
+	at ✽.And I enter email in input field as &quot;tofael483@gmail.com&quot;(signinPage.feature:17)
 ... Removed 32 stack frames
 </div> <!-- stack-trace -->
                   <em>
@@ -202,11 +195,11 @@ Caused by: java.lang.NullPointerException
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
 &lt;suite guice-stage=&quot;DEVELOPMENT&quot; verbose=&quot;0&quot; name=&quot;BDD Test Suite&quot;&gt;
-  &lt;test name=&quot;Smoke Test&quot;&gt;
+  &lt;test name=&quot;Login Test&quot;&gt;
     &lt;classes&gt;
       &lt;class name=&quot;com.amazonbdd.test.qa.testRunner.TestRunner&quot;/&gt;
     &lt;/classes&gt;
-  &lt;/test&gt; &lt;!-- Smoke Test --&gt;
+  &lt;/test&gt; &lt;!-- Login Test --&gt;
 &lt;/suite&gt; &lt;!-- BDD Test Suite --&gt;
             </pre>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -218,7 +211,7 @@ Caused by: java.lang.NullPointerException
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">Smoke Test (1 class)</span>
+                <span class="test-name">Login Test (1 class)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -256,16 +249,16 @@ data.addRows(2);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'feature')
 data.setCell(0, 2, 'com.amazonbdd.test.qa.testRunner.TestRunner')
-data.setCell(0, 3, 205);
+data.setCell(0, 3, 14708);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'feature')
 data.setCell(1, 2, 'com.amazonbdd.test.qa.testRunner.TestRunner')
-data.setCell(1, 3, 54);
+data.setCell(1, 3, 13766);
 window.suiteTableData['BDD_Test_Suite']= { tableData: data, tableDiv: 'times-div-BDD_Test_Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 259 ms</span>
+              <span class="suite-total-time">Total running time: 28 seconds</span>
               <div id="times-div-BDD_Test_Suite">
               </div> <!-- times-div-BDD_Test_Suite -->
             </div> <!-- times-div -->
@@ -300,17 +293,17 @@ return data;
                 <img src="failed.png">
                 </img>
                 <span class="method-name">feature(As an User)</span>
-                <span class="method-start">448 ms</span>
+                <span class="method-start">455 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
                 <span class="method-name">feature(Sign In)</span>
-                <span class="method-start">664 ms</span>
+                <span class="method-start">15180 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">testDownClass</span>
-                <span class="method-start">719 ms</span>
+                <span class="method-start">28947 ms</span>
               </div> <!-- configuration-class after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

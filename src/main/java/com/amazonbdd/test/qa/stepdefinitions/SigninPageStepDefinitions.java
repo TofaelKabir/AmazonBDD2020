@@ -31,7 +31,7 @@ public class SigninPageStepDefinitions extends TestBase {
 		driver.get(arg1);
 		waitHelper = new WaitHelper(driver);
 		waitHelper.WaitForElement(homePage.amazonLogo, 60);
-		throw new PendingException();
+		//throw new PendingException();
 	}
 
 	@Then("^I should see the title and logo of the Amazon application$")
@@ -42,7 +42,7 @@ public class SigninPageStepDefinitions extends TestBase {
 				"Home Page Title doesn't match");
 		boolean flag = homePage.validateAmazonLogo();
 		Assert.assertTrue(flag);
-		throw new PendingException();
+		//throw new PendingException();
 	}
 
 	@When("^I hover over on sign in area$")
@@ -61,7 +61,7 @@ public class SigninPageStepDefinitions extends TestBase {
 		System.out.println(totalCount);
 		for (int i = 0; i < totalCount; i++) {
 			System.out.println(list.get(i).getText());
-			throw new PendingException();
+			//throw new PendingException();
 		}
 	}
 
@@ -70,7 +70,7 @@ public class SigninPageStepDefinitions extends TestBase {
 		waitHelper.WaitForElement(homePage.signIn, 60);
 		WebElement signIn = driver.findElement(By.xpath("//span[@class='nav-action-inner']")); // Why i CAN'T AVOID IT?
 		js.executeScript("arguments[0].click();", signIn);
-		throw new PendingException();
+		//throw new PendingException();
 	}
 
 	@When("^I enter email in input field as \"([^\"]*)\"$")
@@ -78,33 +78,33 @@ public class SigninPageStepDefinitions extends TestBase {
 
 		js.executeScript(
 				"document.getElementByClass('a-input-text a-span12 auth-autofocus auth-required-field').value = 'arg1';");
-		throw new PendingException();
+		//throw new PendingException();
 	}
 
 	@When("^I click in continue button$")
 	public void i_click_in_continue_button() throws Throwable {
 		WebElement cont = driver.findElement(By.xpath("//input[@class='a-button-input']"));
 		cont.click();
-		throw new PendingException();
+		//throw new PendingException();
 	}
 
 	@When("^I enter password in input field as \"([^\"]*)\"$")
 	public void i_enter_password_in_input_field_as(String arg1) throws Throwable {
 		js.executeScript("document.getElementByXpath('//input[@id='ap_password']').value = 'arg1';");
-		throw new PendingException();
+		//throw new PendingException();
 	}
 
 	@When("^I click in SignIn button$")
 	public void i_click_in_SignIn_button() throws Throwable {
 		driver.findElement(By.xpath("//input[@id='signInSubmit']")).click();
-		throw new PendingException();
+		//throw new PendingException();
 	}
 
 	@Then("^I sould see the title of the SignIn page$")
 	public void i_sould_see_the_title_of_the_SignIn_page() throws Throwable {
 		String title2 = signinPage.validateSignInPageTitle();
 		Assert.assertEquals(title2, "Your Amazon.com");
-		throw new PendingException();
+		//throw new PendingException();
 	}
 
 }

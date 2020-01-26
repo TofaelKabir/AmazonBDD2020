@@ -1,5 +1,6 @@
 package com.amazonbdd.test.qa.pageObjects;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -26,10 +27,10 @@ public class HomePage {
 	@FindBy(how = How.CLASS_NAME, using ="hm-icon nav-sprite") //this is another way to write
     public static WebElement hamburger;
 
-	@FindBy(css = ".nav-sprite nav-logo-base")
+	@FindBy(css = ".nav-sprite.nav-logo-base")
 	public WebElement amazonLogo;
 
-	@FindBy(css = ".nav-search-dropdown searchSelect")
+	@FindBy(css = ".nav-search-dropdown.searchSelect")
 	public WebElement searchDropdown;
 
 	@FindBy(name = "field-keywords")

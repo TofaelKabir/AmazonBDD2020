@@ -16,7 +16,7 @@ public class Constants {
 //	public static final String HOME_PAGE_HEADER = "Sales Dashboard";
 //	
 	public static final String WEDDING_REGISTRY_PAGE_TITLE = "Amazon Wedding";
-	public static final String CREATING_WEDDING_REGISTRY_PAGE_TITLE = "Create a Wedding Registry - Amazon Wedding &amp; Bridal Registry";
+	public static final String CREATING_WEDDING_REGISTRY_PAGE_TITLE = "**************";
 //	
 //	public final static String TESTDATA_SHEET_PATH = "/Users/NaveenKhunteta/Documents/workspace/JanPOMSeries/"
 //			+ "src/main/java/com/qa/hubspot/testdata/HubSpotTestData.xlsx";
